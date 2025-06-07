@@ -5,40 +5,27 @@ public class Main{
 		
 	    double nota1, nota2, nota4, nota4, media;
 	    
+	    nota1 = sc.nextDouble();
 	    
-	    System.out.println("Digite a primeira nota:");
-	    double nota1 = sc.nextDouble();
-	    System.out.println("Digite a segunda nota:");
-	    double nota2 = sc.nextDouble();
-	    System.out.println("Digite a terceira nota:");
-	    double nota3 = sc.nextDouble();
-	    System.out.println("Digite a quarta nota:");
-	    double nota4 = sc.nextDouble();
+	    nota2 = sc.nextDouble();
+	    
+	    nota3 = sc.nextDouble();
+	    
+	    nota4 = sc.nextDouble();
 	    
         media = nota1 + nota2 + nota3 + nota4;
         
-        // abaixo de 5 reprovado, 5 e 6.9 em exame e 7 para cima aprovado
-        
-        switch{
-            case 1 :
-                media < 5;
-                    System.out.println("Media=" + " " + media);
-                    System.out.println("aluno reprovado");
-                
-            break;
-            
-            case 2 : 
-                media > 5 && media <= 6.9;
-                    System.out.println("Media=" + " " + media);
-                    System.out.println("aluno em analise");
-                
-            break;
-            case 3 :
-                media > 7;
-                    System.out.println("Media=" + " " + media);
-                    System.out.println("aluno em aprovado");
-                
-            break;
+       if(media < 5){
+            System.out.println("Media=" + " " + media);
+            System.out.println("aluno reprovado");
+       }
+        else if(media > 5 && media <= 6.9){
+            System.out.println("Media=" + " " + media);
+            System.out.println("aluno em analise");
         }
-	}
+        else if(media > 7){
+            System.out.println("Media=" + " " + media);
+            System.out.println("aluno em aprovado");
+        }
+    }
 }
