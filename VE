@@ -21,24 +21,24 @@ public class Main{
         
         switch{
             case 1 :
-                media < 5{
+                media < 5;
                     System.out.println("Media=" + " " + media);
                     System.out.println("aluno reprovado");
-                }
-            break
+                
+            break;
             
             case 2 : 
-                media > 5 && media <= 6.9{
+                media > 5 && media <= 6.9;
                     System.out.println("Media=" + " " + media);
                     System.out.println("aluno em analise");
-                }
-            break
+                
+            break;
             case 3 :
-                media > 7{
+                media > 7;
                     System.out.println("Media=" + " " + media);
                     System.out.println("aluno em aprovado");
-                }
-            break
+                
+            break;
         }
 	}
 }
